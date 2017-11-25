@@ -1,0 +1,27 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDekNDQWZPZ0F3SUJBZ0lRTTNkZEdqaGR2cXBpVnJJMjlrcUpsREFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlRd056SmlOakJrTkMxa1lXSTRMVFEzTWpndE9EZGlNUzFsTlRCaVpqZGlaRE0zWWpFdwpIaGNOTVRjeE1USTBNakl6TkRNNVdoY05Nakl4TVRJek1qTXpORE01V2pBdk1TMHdLd1lEVlFRREV5UXdOekppCk5qQmtOQzFrWVdJNExUUTNNamd0T0RkaU1TMWxOVEJpWmpkaVpETTNZakV3Z2dFaU1BMEdDU3FHU0liM0RRRUIKQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUN3MGZIaFVPRGZVbi83dHJsNkFXVld6cEtvRXJEck1VbFZlRzd1YWxTcgp6by9WU290VXg2WWZQa3dIRHh6bE1vRnp2K0N1VWZpcUdBUkpPVWZLV2UrWnBNbkNSdzREMDVSWXVxZXZ1WWcrCjZrUmVKR3pMNzdwQ3haQ2tXbnBYbVlKeG5HTUllWDVNdkNNQXpnYUd6Q0JxQ3RVUGxlMUVOcFFBc0VYamxPRXgKTXl0S2F3SnhNdGZRMmxKM1BQRVF0aUpzK2xvaW9yZEptcHI5STlGQVk2dFpOQURtNkN5R2h2em1mUEg5cW1EVQpFZnRlakNmZ3hlMzZxKzdoTXEwb3NUUDA1WENxUkc5VUZlcTdaOXpNK0lSbVBiQm9hMmdMRndpYW1hZXFOczhUCmRrZ1B0MkM3M3NvTDlEbUJiUUg3WEYyQ2VxaTU5VE9EeWhBb0huTlIzd0ViQWdNQkFBR2pJekFoTUE0R0ExVWQKRHdFQi93UUVBd0lDQkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFDRQpSb3Y1Uk8yNkd2cWVsai9iZHFKQUdodGlQNFoyd1M1NXY2VUNRN3dCUmJVWklOOWhyWGJEN0wrcElGWU5kQWhCCmZDcUhoTTd0NDNRTjFVd25NWDhvbk1UejVqci95RzRWTkZLam9tMDM5aXdFcjNINzJNNjd0RGYwTndSaGd2RkkKTmdMTmVUejhKSGpmWlN4blRIbWV4ZVhRM2twSTdJUE91by9teVUwNU93SEYrZ2JjRE91aEJacDI4OUgvTFNoeQpFRlg0cUI5elF0U2ZYVm1UZnhjNndjZTZRY2thWGJnaXQ0TzJTcmt0c0ZDQmZEdjZpVWdpcEtxeEp0eVhhUUVsCitSSGNkWVV3eXhmWlBvNHVaa0Y5c3pWQ3pETmp3Rmc5dGphWTBaTlZYZnZ2bHQ0NE4wWnFCSVhkTUo0K3dxSmoKS01UMFZrbzB3TVZaMGMvcEZGdDAKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://104.198.186.95
+  name: gke_codemotion-demo_us-central1-f_codemotion-cluster
+contexts:
+- context:
+    cluster: gke_codemotion-demo_us-central1-f_codemotion-cluster
+    user: gke_codemotion-demo_us-central1-f_codemotion-cluster
+    namespace: ASSIGNED-NAMESPACE
+  name: gke_codemotion-demo_us-central1-f_codemotion-cluster
+current-context: gke_codemotion-demo_us-central1-f_codemotion-cluster
+kind: Config
+preferences: {}
+users:
+- name: gke_codemotion-demo_us-central1-f_codemotion-cluster
+  user:
+    auth-provider:
+      config:
+        access-token: ya29.GlsOBWMphueOgRuRbG-9rAAHITZWObeOAG98b06aoc478wxF8PlhPT9ck9heK6Q0SA68RQp7KcytnXKKjhBrZ7s6_I51nP7MBfp7-VKRwnWPeQliJdvkMPTT1vJX
+        cmd-args: config config-helper --format=json
+        cmd-path: /Users/age/GCP/google-cloud-sdk/bin/gcloud
+        expiry: 2017-11-25T00:34:39Z
+        expiry-key: '{.credential.token_expiry}'
+        token-key: '{.credential.access_token}'
+      name: gcp

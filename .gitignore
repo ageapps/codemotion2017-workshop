@@ -1,0 +1,7 @@
+cluster-config
+logs
+*.log
+npm-debug.log*
+docker-compose-debug.yml
+Dockerfile-debug
+node_modules
