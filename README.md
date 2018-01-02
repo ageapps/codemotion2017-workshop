@@ -12,7 +12,7 @@ This workshop is based on Google Cloud Platform [Container Engine] which gives a
 It is recomended to use the [free trial](https://cloud.google.com/free/) that Google offers to try all its services.
 ![offer](./art/offer.png)
 ### Create Cluster on Google Cloud Platform
-Cluster can be created through the [Cloud Console](https://console.cloud.google.com/) or using the [gcloud] bash utility.
+Cluster can be created through the [Cloud Console](https://console.cloud.google.com/) or using the [gcloud] bash utility. (The )
 ```
 gcloud container clusters create codemotion-cluster --num-nodes=3
 ```
@@ -34,8 +34,6 @@ NAME                                                STATUS    AGE       VERSION
 gke-codemotion-cluster-default-pool-548f897f-4d0p   Ready     51m       v1.7.8-gke.0
 gke-codemotion-cluster-default-pool-548f897f-5sx5   Ready     51m       v1.7.8-gke.0
 gke-codemotion-cluster-default-pool-548f897f-h18m   Ready     51m       v1.7.8-gke.0
-gke-codemotion-cluster-default-pool-548f897f-rj3l   Ready     51m       v1.7.8-gke.0
-gke-codemotion-cluster-default-pool-548f897f-sm28   Ready     51m       v1.7.8-gke.0
 ```
 ### Setup a custom namespace
 Once kubctl works, it is a good practice to create a namespace in order to isolate your system from others in your cluster. In this case the namespace name will be `chat`.
@@ -73,3 +71,43 @@ Jump to [task 2](./2-scalable-app) directory.
 ## Task 3
 This is the actual Kuberentes deployment
 Jump to [task 3](./3-gke-deploy) directory.
+
+## Resources
++ [Docker]: Software containerization platform
++ [SocketIOChatDemo]: Chat web application.
++ [NodeJS]: Server enviroment.
++ [MongoDB]: NoSQL database system.
++ [mongoose]: MongoDB object modeling for *node.js*.
++ [docker-build]: Automated build of *Docker* images.
++ [docker-compose]: Automated configuration and run of multi-container *Docker* applications.
++ [Kubernetes]: Open-source system for automating deployment, scaling, and management of containerized applications.
+
+
+[here]: http://swarm1397.cloudhero.io:8080/
+[Microservices architecture]: http://microservices.io/patterns/microservices.html
+[SocketIOChatDemo]: https://github.com/ageapps/SocketIOChatDemo.git
+[NodeJS image]: https://hub.docker.com/_/node/
+[MongoDB image]: https://hub.docker.com/_/mongo/
+[MongoDB]: https://www.mongodb.com
+[mongoose]: http://mongoosejs.com/index.html
+[NodeJS]: http://nodejs.org
+[Docker]: https://docs.docker.com/
+[docker-compose]:https://docs.docker.com/compose/compose-file/
+[docker-build]:https://docs.docker.com/engine/reference/builder/
+[Kubernetes]:https://kubernetes.io/
+[WebSocket handshake]:https://tools.ietf.org/html/rfc6455
+[WebSocket]:https://en.wikipedia.org/wiki/WebSocket
+[MongoStore]:https://www.npmjs.com/package/connect-mongo
+[GlusterFS]:https://www.gluster.org/
+[traefik]:https://traefik.io/
+[NATS]:https://nats.io/
+[NATS Adapter]:https://www.npmjs.com/package/socket.io-nats
+[RabbitMQ]:https://www.rabbitmq.com/
+[Rabbit Adapter]:https://www.npmjs.com/package/socket.io-amqp
+[Redis]:https://redis.io/
+[Redis Adapter]:https://github.com/socketio/socket.io-redis
+[traefik image]:https://hub.docker.com/r/_/traefik/
+[SocketIO]:https://socket.io/
+[Express Session]:https://github.com/expressjs/session
+[NGINX Ingress Controller]: https://github.com/kubernetes/ingress-nginx
+[ingress documentation]: https://github.com/kubernetes/ingress-nginx/blob/master/docs/catalog.md
